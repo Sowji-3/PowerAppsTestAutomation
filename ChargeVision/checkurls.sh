@@ -1,6 +1,8 @@
 
+STDOUTFILE=".tempCurlStdOut"
+> $STDOUTFILE
 while read url
 do
-    urlstatus=$(curl -o /dev/null --silent --head --write-out '%{http_code}' "$url" )
+    urlstatus=$(curl --max-time 5 --silent --write-out %{response_code} --output "$STDOUTFILE" "$url" )
     echo "$url  $urlstatus" 
 done
