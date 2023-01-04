@@ -1,4 +1,7 @@
 # Starter pipeline
+- task: Bash@3
+  inputs:
+    filePath: 'ChargeVision/urls.txt'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -22,3 +25,4 @@ steps:
   inputs:
     
     filePath: 'ChargeVision/checkurls.sh'
+    
