@@ -6,10 +6,10 @@ do
  
   echo "Status code for $url is $urlstatus"
   if test $urlstatus -eq 200; then 
-       echo "url Exists"
+       echo "$url Exists"
         
   else
-       echo "url doesnot exist "
+       echo "$url doesnot exist "
   fi
      
 done < $1
