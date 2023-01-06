@@ -18,14 +18,11 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: Bash@3
+- task: Bash
   inputs:
     filePath: 'ChargeVision/checkurls.sh'
-- task: Application security testing@2022
-  inputs: 'ChargeVision/checkurls.sh'
-    enableProxy: false
-    enableSastScan: true
-    generatePDFReport: true
-    enableDependencyScan: false
+    
 
+
+  
 
