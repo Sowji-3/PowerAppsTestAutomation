@@ -22,6 +22,7 @@ steps:
   inputs:
     filePath: 'ChargeVision/checkurls.sh'
     arguments: 'urls.txt'
+    workingDirectory: 'ChargeVision'
 
 
 
