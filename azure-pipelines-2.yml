@@ -18,9 +18,10 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: Bash
+- task: Bash@3
   inputs:
-    filePath: 'ChargeVision/checkurls.sh'
+    filePath: '''ChargeVision/checkurls.sh'''
+
 
     
 
