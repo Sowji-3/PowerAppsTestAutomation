@@ -21,6 +21,7 @@ steps:
 - task: Bash@3
   inputs:
     filePath: 'ChargeVision/checkurls.sh'
+    arguments: 'urls.txt'
 
 
 
