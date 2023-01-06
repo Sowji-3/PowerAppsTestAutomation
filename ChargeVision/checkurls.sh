@@ -7,6 +7,7 @@ do
   then 
     echo "url Exists : $url"
   else
-    echo "url doesnot exist : $url "
+    echo "url doesnot exist : $url"
+  fi
      
 done < $1
