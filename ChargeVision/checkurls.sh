@@ -5,8 +5,8 @@ do
   urlstatus=$(curl -s -L -I -o /dev/null --silent  --write-out '%{http_code}' "$url" )
   if $urlstatus= 200;
   then 
-    echo " $url Exists : $urlstatus"
+    echo "url Exists : $url"
   else
-    echo " $url doesnot exist : $urlstatus "
+    echo "url doesnot exist : $url "
      
 done < $1
