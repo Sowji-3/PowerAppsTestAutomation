@@ -21,5 +21,9 @@ steps:
 - task: Bash@3
   inputs:
     filePath: 'ChargeVision/checkurls.sh' 
-    script: 'http:chargevision3.com'
-
+    - task: Application security testing@2022
+      inputs:
+        projectName: 'laravel'
+        enableProxy: false
+        enableSastScan: true
+        enableDependencyScan: false
