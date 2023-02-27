@@ -17,4 +17,3 @@ http://stock.chargevision.com/
 http://corporate.chargevision.com/
 http://corporate-api.chargevision.com/
 https://corporate.bppulse.co.uk/
-https://vssps.dev.azure.com/bp/_apis/graph/users?api-version=6.0-preview.1
